@@ -1,0 +1,26 @@
+﻿{
+  "name": "Sync Scroll",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Syncronize active tabs' scroll bar.",
+  "browser_action": {
+      "name": "Sync Scroll"
+  },
+  "background": {
+      "scripts": [
+          "background.js"
+      ]
+  },
+  "permissions": [
+      "tabs"
+  ],
+  "content_scripts": [
+	{
+		"matches": [
+			"http://*/*",
+			"https://*/*"
+		],
+		"js": ["scroll.js"]
+	}
+  ]
+}
