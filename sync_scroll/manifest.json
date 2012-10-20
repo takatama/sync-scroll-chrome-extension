@@ -1,6 +1,6 @@
 ﻿{
   "name": "Sync Scroll",
-  "version": "0.1",
+  "version": "0.2",
   "update_url": "https://github.com/mkormendy/sync-scroll-chrome-extension/blob/master/updates.xml",
   "manifest_version": 2,
   "description": "Syncronize active tabs' scroll bar.",
@@ -8,7 +8,8 @@
              "48": "icon48.png",
              "128": "icon128.png" },
   "browser_action": {
-      "name": "Sync Scroll"
+      "name": "Sync Scroll",
+      "default_icon": "icon16.png"
   },
   "background": {
       "scripts": [
@@ -27,5 +28,5 @@
     "js": ["scroll.js"]
   }
   ],
-  "update_url": "https://github.com/takatama/sync-scroll-chrome-extension/blob/master/sync_scroll.crx?raw=true"
+  "update_url": "https://github.com/mkormendy/sync-scroll-chrome-extension/blob/master/sync_scroll.crx?raw=true"
 }
